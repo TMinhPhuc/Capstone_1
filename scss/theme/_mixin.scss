@@ -1,0 +1,15 @@
+@mixin styleText ($color, $font-size, $font-weight) {
+    color: $color;
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
+
+@mixin styleButton ($bg, $color, $bg-hover, $color-hover) {
+    background: $bg;
+    color: $color;
+    transition: all 0.5s;
+    &:hover {
+        background: $bg-hover;
+        color: $color-hover;
+    }
+}
