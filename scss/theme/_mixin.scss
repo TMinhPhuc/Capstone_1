@@ -7,7 +7,7 @@
 @mixin styleButton ($bg, $color, $bg-hover, $color-hover) {
     background: $bg;
     color: $color;
-    transition: all 0.5s;
+    transition: all 0.3s;
     &:hover {
         background: $bg-hover;
         color: $color-hover;

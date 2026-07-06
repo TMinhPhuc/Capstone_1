@@ -1,4 +1,159 @@
-@import './theme/mixin';
-@import './theme/variables';
-@import './theme/reset';
+@import "./theme/mixin";
+@import "./theme/variables";
+@import "./theme/reset";
 
+header {
+  position: absolute;
+  top: 0;
+  left: 0;  
+  padding-top: 10px;
+  width: 100%;
+  border-bottom: 1px solid $bg-muted;
+  position: fixed;
+  z-index: 999;
+  background: #ffff;
+
+  .navbar-logo {
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      .brand-main {
+        @include styleText($color-primary, 22px, 800);
+      }
+
+      .brand-sub {
+        @include styleText($text-secondary, 22px, 500);
+      }
+
+      .brand-tag {
+        @include styleText($text-secondary, 10px, 750);
+        background-color: rgba(128, 128, 128, 0.253);
+        padding: 3px 6px;
+        border-radius: 5px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .navbar-collapse {
+    .navbar-nav {
+      .nav-item {
+        margin: 10px;
+        .nav-link {
+          @include styleText($text-secondary, 15px, 400);
+          &:hover {
+            color: $color-primary;
+          }
+        }
+        .dropdown-menu {
+          .dropdown-item {
+            color: $text-secondary;
+            &:hover {
+              color: $color-primary;
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+  .navbar-info {
+    display: flex;
+    align-items: center;
+    .navbar-login {
+      text-decoration: none;
+      color: $bg-dark;
+      margin-right: 15px;
+    }
+    button {
+      padding: 8px 16px;
+      border-radius: 20px;
+      background-color: $bg-primary;
+      border: 1px solid $bg-primary;
+      color: $text-light;
+
+      transition:
+        background-color 0.3s,
+        border-color 0.3s;
+
+      .navbar-try {
+        text-decoration: none;
+        color: $text-light;
+      }
+      i {
+        margin-left: 6px;
+        display: inline-block;
+        transition: all 0.3s ease;
+      }
+
+      &:hover {
+        background-color: $color-primary-hover;
+        border-color: $color-primary-hover;
+        i {
+          transform: translateX(4px);
+        }
+      }
+    }
+  }
+}
+
+// CAROUSEL
+.carousel {
+  .carousel-title {
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      letter-spacing: -0.05rem;
+      line-height: 1.1;
+      color: #212529;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 1.15rem;
+      color: $text-muted;
+      padding-right: 1.5rem; 
+    }
+  }
+
+  .btn-brand {
+    background-color: $brand-primary;
+    border-color: $brand-primary;
+    color: white;
+    font-weight: 500;
+
+    &:hover {
+      background-color: $brand-primary-hover;
+      border-color: $brand-primary-hover;
+      color: white;
+    }
+  }
+
+  .btn-outline-brand {
+    color: $brand-primary;
+    border-color: $brand-primary;
+    background-color: transparent;
+    font-weight: 500;
+
+    &:hover {
+      background-color: $brand-primary-light;
+      color: $brand-primary;
+      
+    }
+  }
+}
+
+// CAROUSEL
+.carousel{
+  background: #fff;
+  .carousel-content{
+    .title{
+      h1{
+        font-size: 50px;
+        font-weight: 800;
+      }
+      p{
+        font-size: 18px;
+      }
+    }
+  }
+}
