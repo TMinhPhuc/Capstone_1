@@ -26,7 +26,7 @@ header .navbar-logo .navbar-brand {
   align-items: center;
 }
 header .navbar-logo .navbar-brand .brand-main {
-  color: #4f46e5;
+  color: rgb(79, 70, 229);
   font-size: 22px;
   font-weight: 800;
 }
@@ -53,13 +53,13 @@ header .navbar-collapse .navbar-nav .nav-item .nav-link {
   font-weight: 400;
 }
 header .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
-  color: #4f46e5;
+  color: rgb(79, 70, 229);
 }
 header .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item {
   color: #475569;
 }
 header .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
-  color: #4f46e5;
+  color: rgb(79, 70, 229);
   background-color: transparent;
 }
 header .navbar-info {
@@ -179,7 +179,7 @@ header .navbar-info button:hover i {
   color: #0f172a;
 }
 #testimonials .section-header h2 .text-purple {
-  color: #4f46e5;
+  color: rgb(79, 70, 229);
 }
 #testimonials .section-header p {
   color: #475569;
