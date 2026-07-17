@@ -140,4 +140,103 @@ header .navbar-info button:hover i {
 }
 .carousel .carousel-content .title p {
   font-size: 18px;
+}
+
+.company .logo-company .logo-partner {
+  filter: grayscale(100%);
+}
+
+.super .custom-purple-badge {
+  background-color: rgba(95, 68, 124, 0.1450980392);
+  color: rgba(126, 34, 206, 0.8980392157);
+  border: 1px solid rgba(128, 128, 128, 0.199);
+}
+.super .workflows {
+  text-align: left;
+}
+.super .workflows .insight .insights-text {
+  text-align: left;
+}
+.super .workflows .insight .insights-img {
+  width: 50%;
+}
+.super .workflows .insight .insights-img img {
+  width: 100%;
+  height: auto;
+}
+
+#testimonials {
+  padding: 50px 0;
+  overflow: hidden;
+}
+#testimonials .section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+#testimonials .section-header h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+#testimonials .section-header h2 .text-purple {
+  color: #4f46e5;
+}
+#testimonials .section-header p {
+  color: #475569;
+}
+#testimonials .scrolling-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+#testimonials .scrolling-wrapper .scrolling-content {
+  display: flex;
+  width: max-content;
+  margin: 0 auto;
+  gap: 50px;
+  animation: scrollCards 25s linear infinite;
+}
+#testimonials .testimonial-card {
+  background-color: #ffffff;
+  width: 400px;
+  height: 350px;
+  padding: 50px 20px;
+  border-radius: 5%;
+  font-size: 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#testimonials .testimonial-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+#testimonials .testimonial-card .card-text {
+  margin-bottom: 2rem;
+}
+#testimonials .testimonial-card .user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#testimonials .testimonial-card .user-info img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+#testimonials .testimonial-card .user-info .details h6 {
+  color: #0f172a;
+}
+#testimonials .testimonial-card .user-info .details small {
+  color: #6c757d;
+}
+
+@keyframes scrollCards {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }/*# sourceMappingURL=style.css.map */
