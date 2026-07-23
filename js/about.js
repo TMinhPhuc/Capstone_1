@@ -9,6 +9,14 @@ window.addEventListener("scroll", function() {
     }
 });
 
+document.querySelector(".switch-theme-content").onclick = () => {
+    document.querySelector("body").classList.toggle("dark");
+    let svgs = document.querySelectorAll(".switch-theme svg");
+    svgs.forEach(svg => {
+        svg.classList.toggle("d-none");
+    });
+}
+
 document.querySelector("header button").onclick = function() {
     document.querySelector("header button svg").classList.toggle("active");
     document.querySelector("header button div").classList.toggle("active");

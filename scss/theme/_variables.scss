@@ -1,15 +1,15 @@
-$color-primary:        #4f46e5; 
-$color-primary-hover:  #4338ca; 
-$color-secondary:      #3b82f6; 
-$color-accent-orange:  #f97316; 
-$color-accent-purple:  #a855f7; 
+$color-primary:#4f46e5; 
+$color-primary-hover:#4338ca; 
+$color-secondary:#3b82f6; 
+$color-accent-orange:#f97316; 
+$color-accent-purple:#a855f7; 
 
-$bg-primary:           #4f46e5;
-$bg-primary:           rgb(79 70 229);
-$bg-main:              #ffffff; 
-$bg-light:             #f8fafc; 
-$bg-dark:              #1e1b4b; 
-$bg-muted:             #f1f5f9; 
+$bg-primary: #4f46e5;
+$bg-primary: rgb(79 70 229);
+$bg-main: #ffffff; 
+$bg-light: #f8fafc; 
+$bg-dark: #1e1b4b; 
+$bg-muted: #f1f5f9; 
 
 $text-primary:         #0f172a; 
 $text-secondary:       #475569; 
@@ -52,6 +52,7 @@ $color-enterprise: rgb(147, 51, 234);
 $color-enterprise-border: rgb(233, 213, 255);
 $color-enterprise-bg: rgb(243, 232, 255);
  
+$color-text-black: black;
 $color-text-slate-800: rgb(30, 41, 59);
 $color-text-gray-800: rgb(31, 41, 55);
 $color-text-neutral-900: rgb(38, 38, 38);
@@ -77,3 +78,25 @@ $color-border-slate-200: rgb(226, 232, 240);
  
 $color-shadow-sm: rgba(0, 0, 0, 0.1);
 $color-shadow-lg: rgba(0, 0, 0, 0.25);
+
+$color-bg-dark-dark-theme: rgb(24 28 49);
+$color-bg-dark-extra-dark-theme: rgb(16, 19, 33);
+$color-bg-gray-theme: rgb(28 33 54);
+
+:root {
+    --color-bg-white-theme: #{$color-white};
+    --color-bg-light-theme: #{$color-white};
+    --color-bg-gray-theme: #{$color-bg-gray-200};
+    --color-bg-item-theme: #{$color-white};
+    --color-text-black-theme: #{$color-text-black};
+    --color-text-gray-dark-theme: #{$color-text-slate-800};
+}
+
+body.dark {
+    --color-bg-white-theme: #{$color-bg-dark-dark-theme};
+    --color-bg-light-theme: #{$color-bg-dark-dark-theme};
+    --color-bg-gray-theme: #{$color-bg-dark-extra-dark-theme};
+    --color-bg-item-theme: #{$color-bg-gray-theme};
+    --color-text-black-theme: #{$color-white};
+    --color-text-gray-dark-theme: #{$color-white};
+}
